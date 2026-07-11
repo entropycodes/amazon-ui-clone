@@ -77,7 +77,7 @@ While building this project, I gained hands-on experience with:
 
 ## 📸 Preview
 
-> *(Add a screenshot of the homepage here.)*
+![Amazon Homepage Preview](./screenshots/preview.png)
 
 ---
 
