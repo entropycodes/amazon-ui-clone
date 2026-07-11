@@ -1,0 +1,316 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    border: border-box;
+}
+
+.navbar{
+    background-color: #0f1111;
+    height: 60px;
+    color: white;
+    display: flex;
+    align-items: center;  /* to align items vertically (along cross axis) in the center */
+    justify-content: space-evenly; /* to evenly distribute the space between the items */
+}
+
+.nav-logo{
+    height: 50px;
+    width: 100px;
+    border: 1px solid transparent;
+}
+
+.logo{
+    background-image: url("amazon_logo.png");
+    height: 50px;
+    width: 100px;
+    background-size: cover;
+}
+
+.border{
+    border: 1px solid transparent;      /* transparent bcz initially we dont any border. we want it only while hovering */
+}
+
+.border:hover{
+    border: 1px solid white;
+}
+
+
+/* box 2 */
+
+.add-first{
+    color: #cccccc;
+    font-size: 0.85rem;     /* taking font-size in rem instead of px to make our website more responsive */
+    margin-left: 16px;
+}
+
+.add-second{
+    font-size: 1rem;        
+    margin-left: 3px;
+}
+
+.add-icon{
+    display: flex;      /* to align the icon and India in a single line */
+}
+
+
+/* box 3 */
+
+.nav-search{
+    display: flex;
+    height: 40px;
+    width: 600px;
+    /* background-color: pink; */
+    border-radius: 4px;
+    justify-content: space-evenly; /* to evenly distribute the space between the items */
+}
+
+.nav-search:hover{
+    border: 2px solid rgb(239, 170, 9);
+}
+
+.search-select{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #e6e6e6;
+    width: 50px;
+    /* padding-left: 5px; */
+    text-align: center;
+    border: none;     /* default border is 1px solid black, we want to remove it, thats y set border to none*/
+}
+
+.search-bar{
+    width: 100%;
+    border: none;
+    padding-left: 7px;
+    font-size: 1rem;
+}
+
+.search-icon{
+    width: 45px;
+    border: none;
+    background-color: rgb(241, 170, 29);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 1.2rem;
+}
+
+/* box 4 and 5 - sign up */
+.acc-first{
+    font-size: 0.85rem;
+}
+
+.acc-second{
+    font-size: 1rem;
+}
+
+.acc-dropdown{
+    display: flex;
+    font-weight: 700;
+}
+
+
+/* box 6 - cart */
+.nav-cart{
+    display: flex;
+    align-items: end;       /* to align items vertically (along cross axis) at the end */
+}
+
+.cart-icon{
+    font-size: 1.5rem;
+}
+
+
+
+/*panel */
+
+.panel{
+    height: 40px;
+    background-color: #243131;
+    color: white;
+    display: flex;
+    align-items: center;       /*doesnt work for "All" in menu bcz, here this would align .panel-menu vertically, not panel-menu's internal content like "All" thats y we are doing align-items:center in .panel-menu also which would align its children i.e., icon and "all" in centre vertically (cross axis)*/
+    justify-content: space-evenly; /* to evenly distribute the space between the items */
+}
+
+/* panel - box 1 */
+.panel-menu{
+    display: flex;
+    align-items: center;    /* this too is needed. It aligns the icon and "All" vertically in the center */
+    margin-left: 20px;
+
+}
+
+.menu-first{
+    font-size: 1.5rem;
+}
+
+.menu-sec{
+    padding-left: 5px;
+    font-size: 1rem;
+    font-weight: 550;
+}
+
+
+/* panel box - 2 */
+.panel-ops{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.panel-ops p{
+    margin-left: 30px;
+}
+
+/*panel box - 3 deals*/
+.panel-deals{
+    width: 300px;
+    font-weight: 700;
+
+}
+
+
+
+/* hero section */
+.hero-section{
+    background-image: url(hero-image-amazon.jpg);
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;       /* to bring hero-msg wala div at the bottom of the hero section */
+}
+
+.hero-msg{
+    background-color: white;
+    height: 40px;
+    width: 90%;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hero-msg a{
+    color: #2162a1;
+    text-decoration: none;  /* to remove the underline from the link */
+}
+
+
+/* shop section */
+
+.shop-section{
+    display: flex;      /* to align the boxes in a single line */
+    justify-content: space-evenly; /* to evenly distribute the space between the items */
+    background-color: rgb(244, 244, 139);
+    flex-wrap: wrap;  /* to wrap the boxes to the next line if they dont fit in a single line */
+}
+
+.box{
+    height: 380px;
+    width: 23%;
+    /* border: 2px solid black; */
+    background-color: white;
+    padding: 20px 0px 15px 0px;  /* padding: top right bottom left*/
+}
+
+.box-img{
+    height: 300px;
+    background-size: cover;
+    margin-top: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    /* padding: 1rem 0rem 1rem; */
+}
+
+.box-link{
+    color: #2162a1;
+}
+
+/* .shop-row2{
+    height: 400px;
+    margin-top: 5px;
+} */
+ 
+.shop-row2 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-top: 10px solid rgb(244, 244, 139);
+    margin-top: 10px;
+}
+
+
+/* footer panel - 1 */
+.foot-panel1{
+    height: 50px;
+    background-color: #33404f;
+    color: white;
+    font-size: 13px;
+    display: flex;
+    align-items: center;  /* to align items vertically (along cross axis) in the center */
+    justify-content: center; /* to center the items horizontally (along main axis) */
+    border-top: 1.5rem solid rgb(244, 244, 139);
+}
+
+/* footer-panel - 2 */
+.foot-panel2{
+    height: 340px;
+    background-color:#242e39;
+    color: white;
+    display: flex;          /* to bring all 4 div in a single line */
+    justify-content: space-evenly;      /* to evenly distribute the space between the 4 div */
+}
+
+.foot-panel2 p{
+    margin-top: 40px;
+    font-weight: 600;
+}
+.foot-panel2 a{
+    color: #dddddd;
+    font-size: 0.85rem;
+    display: block;     /* THIS IS IMP!! TO BRING ALL OPTIONS LIKE A LIST VERTICALLY*/
+    margin-top: 10px;   /* to give some space between the options */
+}
+
+
+/* footer-panel - 3 */
+.foot-panel3{
+    height: 70px;
+    border-top: 0.5px solid rgb(128, 128, 128, 0.5);
+    background-color:#242e39;
+    display: flex;
+    justify-content: center;    /* to center the logo horizontally (along main axis) */
+    align-items: center;  /* to align logo vertically (along cross axis) in the center */
+}
+
+.foot-panel4{
+    height: 65px;
+    background-color: #131a22;
+    color: #dddddd;
+    /* display: block;
+    justify-content: center;    /* to center the text horizontally (along main axis) */
+    /* align-items: center;  /*to align text vertically (along cross axis) in the */
+    font-size: 0.75rem;
+    text-align: center;
+    border-top: 30px solid transparent;
+}
+
+.pages{
+    border-bottom: 5px solid transparent;
+}
+
+.pages a{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
